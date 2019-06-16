@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>DreamCraft - Főoldal</title>
+<style>
+ 
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300&subset=latin-ext');
+ 
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  body {
+    background-image: url("hatter.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 40px;
+    font-family: 'work sans';
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .pirosvonal {
+    border: 1px solid red;
+  }
+  .kozepe {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .fejlec {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-family:arial;
+  }
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .menupont {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .menupont:hover {
+    font-size: 40px;
+  }
+  .gombocska {
+    font-size: 16px;
+    font-family: arial;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 30px;
+    width: 80px;
+    display: inline-block;
+  }
+  .gombocska:hover {
+    background-color: #8C8C8C;
+  }
+  @media (max-width: 767px) {
+  }
+  @media (max-height: 450px) {
+  }
+   body {
+     background-image: url("mlpn.jpg")
+   }
+</style>
+</head>
+<body>
+ 
+<div class="kozepe">Szervereink
+  <div>
+    <a class="gombocska" href="/termekek">Letöltés</a>
+  </div>
+</div>
+ 
+<script>
+        var d = new Date();
+        var n = d.getFullYear();
+        document.getElementById("year").innerHTML = n;
+</script>
+ 
+ 
+</body>
+</html>
